@@ -1,0 +1,26 @@
+{
+  "name": "pbmscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify app.js -t babelify > build.js",
+    "build-min": "browserify app.js -t babelify -g uglifyify > build.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gregorian-calendar": "^4.1.4",
+    "gregorian-calendar-format": "^4.1.3",
+    "rc-time-picker": "^1.1.5",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "uglifyify": "^3.0.2",
+    "watchify": "^3.7.0"
+  }
+}
